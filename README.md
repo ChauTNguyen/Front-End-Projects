@@ -1,0 +1,1 @@
+A collection of my front-end projects I'm doing recently. I'm going to finish at least one site every 2-3 days to practice my front-end & design skills. Each site has the necessary dependencies included within package.json. I'm using gulp to manage my workflow.
