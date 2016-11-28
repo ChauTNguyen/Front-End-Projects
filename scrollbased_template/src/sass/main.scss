@@ -1,0 +1,175 @@
+/* Main SCSS File */
+
+// Base
+@import "variables";
+// Components
+@import "scaffolding";
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: fade-in 2s;
+}
+
+#about .container h2,
+#pics .container h2,
+#contact .container h1 {
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main-nav {
+    position: fixed;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 3em;
+    background-color: $coffee-color;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-nav a {
+    color: black;
+}
+
+#main-nav a:visited {
+    color: black;
+}
+
+#main-nav a:hover {
+    background-color: #bdbdbd;
+    display: block;
+    width: 100%;
+}
+
+.show-nav #main-nav {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 99;
+}
+
+#fixed-nav {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: $coffee-color;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+#nav-coffee {
+    position: absolute;
+    top: 10px;
+}
+
+#fixed-nav,
+#fixed-nav a {
+    color: white;
+}
+
+#fixed-nav h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 0;
+}
+
+#fixed-nav a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.landing-content i {
+    color: black;
+}
+
+#about {
+    background-color: #D0906D;
+    color: white;
+}
+
+#pics {
+    background-color: #424242;
+    color: white;
+}
+
+#contact {
+    background-color: #5A352D;
+}
+
+#contact {
+    color: white;
+}
+
+#contact p {
+    text-align: left;
+}
+
+.btn-scroll {
+    border-radius: 10px;
+    border: .5px solid black;
+    background-color: white;
+    color: black;
+    width: 80%;
+}
+
+#contact i {
+    padding-left: 10px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo i,
+.logo h1 {
+    display: inline-block;
+}
+
+.logo i {
+    padding-right: 10px;
+}
+
+.logo {
+    line-height: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    #about,
+    #contact {
+        height: 40vh;
+    }
+    #pics {
+        height: 160vh;
+    }
+}

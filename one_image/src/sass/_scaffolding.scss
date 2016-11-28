@@ -1,0 +1,27 @@
+html {
+    font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+#container {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    animation: fade-in ease-in 1;
+    animation-duration: 1s;
+}
+
+#content {
+    position: relative;
+    height: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+}

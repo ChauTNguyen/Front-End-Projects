@@ -1,0 +1,51 @@
+/* Main SCSS File */
+
+// Base
+@import "variables";
+// Components
+@import "scaffolding";
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#miuna {
+    width: 50vw;
+    height: 50vw;
+    max-width: 300px;
+    max-height: 300px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+#miuna:hover {
+    opacity: .8;
+    transition: opacity 1s;
+}
+
+#title {
+    color: #212121;
+    font-size: 1.4em;
+    margin-top: 1em;
+}
+
+#caption {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) and (orientation:landscape) {
+    html,
+    body {
+        overflow: hidden;
+    }
+    #miuna {
+        max-width: 150px;
+        max-height: 150px;
+        margin-top: 2em;
+    }
+}
