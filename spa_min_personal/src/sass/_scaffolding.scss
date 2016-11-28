@@ -1,0 +1,17 @@
+html {
+    font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+    color: $color;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+header {
+    padding-bottom: 10vh;
+}
+
+@media only screen and (min-width: 768px) {
+    #container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

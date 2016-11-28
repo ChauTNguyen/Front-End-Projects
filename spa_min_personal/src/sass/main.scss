@@ -1,0 +1,104 @@
+/* Main SCSS File */
+
+// Base
+@import "variables";
+// Components
+@import "scaffolding";
+.logo {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 200px;
+}
+
+.slogan {
+    font-family: Raleway;
+    color: black;
+    font-size: 36px;
+}
+
+.headline {
+    color: $headline-color;
+}
+
+#currently,
+#previously {
+    padding-bottom: 50px;
+}
+
+#currently a,
+#previously a {
+    color: black;
+}
+
+#currently a:visited,
+#previously a:visited {
+    color: black;
+}
+
+#links a {
+    font-size: 0.9em;
+    color: #9e9e9e;
+    text-decoration: none;
+}
+
+#links a:visited {
+    color: #9e9e9e;
+}
+
+#currently a:hover,
+#previously a:hover,
+#links a:hover {
+    color: $headline-color;
+}
+
+.bullet-point {
+    margin-left: -0.10em;
+    margin-right: -0.10em;
+}
+
+#face img {
+    width: 50%;
+    height: auto;
+    z-index: -999;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+    #face img {
+        display: block;
+        margin: auto;
+    }
+    #links {
+        bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    #face img {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    #links {
+        bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (orientation:landscape) {
+    #face img {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    #links {
+        position: fixed;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    #links {
+        position: static;
+    }
+}
