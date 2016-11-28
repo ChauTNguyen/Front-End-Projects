@@ -1,4 +1,4 @@
-https://www.plucky-lip.surge.sh
+site: https://www.plucky-lip.surge.sh
 
 Simple web design idea copied from https://pyraxo.moe.
 
