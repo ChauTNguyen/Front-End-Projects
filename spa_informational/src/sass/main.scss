@@ -4,6 +4,10 @@
 @import "variables";
 // Components
 @import "scaffolding";
+#name {
+    font-size: 2em;
+}
+
 #title {
     margin-bottom: 0;
     background-color: $dark-primary;
@@ -12,6 +16,14 @@
 
 .c3 text {
     font-size: 20px;
+}
+
+#links a {
+    color: black;
+}
+
+#links a:visited {
+    color: black;
 }
 
 footer a {

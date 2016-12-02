@@ -30,7 +30,7 @@ var transfer_gpa = c3.generate({
     bindto: '#cs-transfer-gpa-chart',
     data: {
         columns: [
-            ['data', 3.795]
+            ['GPA', 3.795]
         ],
         type: 'gauge'
     },
@@ -61,7 +61,7 @@ var transfer_gpa = c3.generate({
 });
 
 var enrollments = c3.generate({
-    bindto: '#cs-transfer-enrollments',
+    bindto: '#cs-transfer-enrollments-chart',
     data: {
         // iris data from R
         columns: [
@@ -87,7 +87,7 @@ var enrollments = c3.generate({
 });
 
 var cs_undergrad = c3.generate({
-    bindto: '#cs-population-chart',
+    bindto: '#cs-undergrad-population-chart',
     data: {
         // iris data from R
         columns: [
