@@ -42,11 +42,8 @@ footer {
     background-color: $dark-primary;
     text-align: center;
     color: white;
-}
-
-footer {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em .75em;
+    font-size: 1em;
 }
 
 #footer-content p {
