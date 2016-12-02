@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        title UCB CS
+        title UCB CS Transfer Stats
         link(rel='stylesheet' type='text/css', href='https://fonts.googleapis.com/css?family=Roboto')
         link(rel='stylesheet' type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css')
         link(rel='stylesheet' type='text/css', href='css/main.css')
@@ -26,14 +26,16 @@ html(lang="en")
 
                 h2 Out of 2218 currently EECS/CS Undergraduates...
                 #cs-population-chart
-                //- #hs-gpa-chart
         section(id='undergrad-population')
             .container
                 #cs-population-chart
+        section(id='links')
+            .container
+                p So you youngins don't make the same mistake I did... Study #[a(href='http://www.assist.org/web-assist/welcome.html', target='_blank') Assist] for all of the universities.
         footer
             .container
                 p
-                    em  This site and its creator are not affiliated with Berkeley in any way. This site and its data are meant for editorial purposes only.
+                    em  All data on this page is compiled from #[a(href='https://www.universityofcalifornia.edu/infocenter/transfers-major', target='_blank') here] and #[a(href='https://eecs.berkeley.edu/about/by-the-numbers', target='_blank') here]. This site and its #[a(href='https://www.github.com/chautnguyen', target='_blank') creator] are not affiliated with Berkeley in any way. This site and its data are meant for editorial purposes only.
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js')

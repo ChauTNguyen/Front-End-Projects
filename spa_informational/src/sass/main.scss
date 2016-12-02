@@ -5,10 +5,19 @@
 // Components
 @import "scaffolding";
 #title {
-    font-size: 3em;
     margin-bottom: 0;
+    background-color: $dark-primary;
+    color: white;
 }
 
 .c3 text {
     font-size: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
 }
