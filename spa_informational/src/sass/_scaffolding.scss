@@ -28,21 +28,19 @@ body {
 #transfer-stats {
     background-color: $light-primary;
     padding-bottom: 20px;
-}
-
-#transfer-stats .container {
-    margin: 0 auto;
+    .container {
+        margin: 0 auto;
+    }
 }
 
 #links {
     background-color: $links-cl;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#links p {
-    margin-top: 0;
-    margin-bottom: 0;
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 footer {

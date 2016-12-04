@@ -21,11 +21,10 @@
     box-sizing: border-box;
     border-radius: 100%;
     border: 5px solid white;
-}
-
-#miuna:hover {
-    opacity: .8;
-    transition: opacity 1s;
+    &:hover {
+        opacity: .8;
+        transition: opacity 1s;
+    }
 }
 
 #title {

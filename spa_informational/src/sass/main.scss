@@ -18,18 +18,20 @@
     font-size: 20px;
 }
 
-#links a {
-    color: black;
+#links {
+    a {
+        color: black;
+        &:visited {
+            color: black;
+        }
+    }
 }
 
-#links a:visited {
-    color: black;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:visited {
-    color: white;
+footer {
+    a {
+        color: white;
+        &:visited {
+            color: white;
+        }
+    }
 }

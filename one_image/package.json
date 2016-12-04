@@ -2,9 +2,9 @@
     "name": "min",
     "version": "1.0.0",
     "description": "https://pyraxo.moe/",
-    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "cd dist; surge ./; cd ..;"
     },
     "author": "Chau Nguyen",
     "homepage": "https://www.plucky-lip.surge.sh",
