@@ -82,7 +82,7 @@ var enrollments = c3.generate({
         }
     },
     size: {
-        height: 720
+        height: 360
     }
 });
 
@@ -104,6 +104,6 @@ var cs_undergrad = c3.generate({
         }
     },
     size: {
-        height: 720
+        height: 360
     }
 });

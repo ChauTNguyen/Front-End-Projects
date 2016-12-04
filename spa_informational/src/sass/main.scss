@@ -5,17 +5,14 @@
 // Components
 @import "scaffolding";
 #name {
-    font-size: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 #title {
     margin-bottom: 0;
     background-color: $dark-primary;
     color: white;
-}
-
-.c3 text {
-    font-size: 20px;
 }
 
 #links {
