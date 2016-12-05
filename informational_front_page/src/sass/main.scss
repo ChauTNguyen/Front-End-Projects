@@ -1,0 +1,335 @@
+// Base
+@import "variables";
+// Components
+@import "scaffolding";
+// Button
+@import "button";
+nav a {
+    text-decoration: none;
+}
+
+header nav {
+    .main-nav-header {
+        display: inline;
+        padding: 1em;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: white;
+        letter-spacing: 2px;
+    }
+    ul {
+        display: inline;
+        li {
+            display: inline-block;
+            padding: 1em;
+            a {
+                padding: 1em;
+                color: #757575;
+            }
+            a:visited {
+                color: #757575;
+            }
+            a:hover {
+                background-color: grey;
+                color: white;
+            }
+            button {
+                color: #757575;
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    #nav-right {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+#header-overlay {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    h1 {
+        color: white;
+    }
+    h2 {
+        color: $cl-accent;
+    }
+}
+
+main nav {
+    background-color: $cl-dark-primary;
+    margin-bottom: 2em;
+    ul {
+        li {
+            display: inline-block;
+        }
+        a {
+            display: block;
+            padding: 1em;
+            color: white;
+        }
+        a:visited {
+            display: block;
+            color: white;
+        }
+        a:hover {
+            background-color: $cl-primary;
+        }
+    }
+}
+
+#current-heading {
+    a {
+        color: $font-color;
+        &:visited {
+            color: $font-color;
+        }
+    }
+}
+
+.overlay {
+    padding: 1em;
+    display: block;
+    background-color: $cl-light-primary;
+    color: white;
+    margin: 2em 1em;
+    h3 {
+        margin-top: 0;
+    }
+    a {
+        color: white !important;
+        &:hover {
+            text-decoration: none;
+        }
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+#news h1,
+#current-heading h1,
+#current-heading h2,
+#campus-info h1 {
+    color: $cl-dark-primary;
+}
+
+#news h1,
+#current-heading h1,
+#current-heading h2,
+#current-heading h3,
+#campus-info h1 {
+    margin: 0;
+}
+
+.news-col {
+    a {
+        color: $cl-dark-primary;
+        &:visited {
+            color: $cl-dark-primary;
+        }
+    }
+}
+
+#about {
+    .container {
+        background-color: black;
+        #about-content {
+            color: white;
+        }
+    }
+}
+
+#campus-info .container {
+    background-color: rgba(2, 136, 209, 0.5);
+}
+
+#current-content,
+#news-content,
+#about-content,
+#campus-header {
+    padding: 2em;
+}
+
+#resources {
+    .row {
+        .row-contents {
+            padding: 1em;
+            color: white;
+            text-align: center;
+            a {
+                color: white;
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+        #first {
+            background-color: $cl-dark-primary;
+        }
+        #second {
+            background-color: $cl-primary;
+        }
+        #third {
+            background-color: $cl-light-primary;
+        }
+    }
+}
+
+footer {
+    background-color: #d3d3d3;
+    a {
+        color: $font-color;
+        &:hover {
+            text-decoration: none;
+        }
+        &:visited {
+            color: $font-color;
+        }
+    }
+    #social-media,
+    #social-media-list,
+    #contact-list {
+        padding-bottom: 10px;
+    }
+    #social-media-list {
+        li {
+            padding-bottom: 15px;
+        }
+    }
+    #contact-list {
+        padding-top: 20px;
+    }
+    #uc {
+        padding-bottom: 20px;
+    }
+    #misc-list {
+        padding-top: 40px;
+    }
+    #address {
+        padding-top: 20px;
+    }
+    #copyright {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        #social-media,
+        #social-media-list,
+        #contact,
+        #uc,
+        #address,
+        #misc-list {
+            display: inline-block;
+            vertical-align: top;
+        }
+        #social-media {
+            width: 50%;
+        }
+        #misc-list {
+            width: 50%;
+            ul {
+                li {
+                    margin-right: -4px;
+                }
+            }
+        }
+        #address,
+        #contact {
+            /* technically not necessary because it's on the right */
+            width: 50%;
+        }
+        #contact-list {
+            padding-top: 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .overlay-row {
+        padding-top: 250px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: 0 -10px;
+        .overlay-col {
+            padding-left: 15px;
+            margin: 0 10px;
+            flex: 1 1;
+            .overlay {
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+                .overlay-contents {
+                    padding: 1em;
+                }
+            }
+        }
+    }
+    #campus-info .container {
+        /*position: relative;*/
+        #campus-content {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+    #campus-header {
+        display: inline-block;
+        width: 40%;
+    }
+    .right-col {
+        float: right;
+        width: 50%;
+        vertical-align: top;
+        margin-top: 50px;
+        .overlay-col-right {
+            float: right;
+            .overlay {
+                display: block;
+                max-width: 284px;
+            }
+        }
+    }
+    footer .container {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    #social-media,
+    #contact,
+    #misc-list,
+    #address {
+        flex: 1 1;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #resources .container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        min-height: 225px;
+        .row {
+            flex: 1 1;
+            .row-contents {
+                height: 100%;
+            }
+        }
+    }
+}

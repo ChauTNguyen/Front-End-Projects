@@ -1,0 +1,75 @@
+html {
+    font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    height: 100%;
+    overflow-x: hidden;
+    color: $font-color;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+    font-size: 200%;
+}
+
+body {
+    font-size: 16px !important;
+}*/
+
+header nav {
+    background-color: $cl-nav;
+    /*position: relative;*/
+}
+
+#header-overlay {
+    background-color: $cl-primary;
+}
+
+#landing {
+    height: 100vh;
+}
+
+#current-heading,
+#news,
+#about,
+#campus-info {
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-bottom: 1em;
+}
+
+#news .container,
+#about .container,
+#campus-info .container {
+    padding-bottom: 50px;
+}
+
+#resources {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    padding: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 75%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
