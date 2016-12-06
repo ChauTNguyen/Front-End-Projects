@@ -3,234 +3,230 @@ html(lang="en")
     head
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-        meta(name='description' content ='')
+        meta(name='description' content='')
         meta(name='author' content='Chau Nguyen')
 
-        title UC
+        title UCI
         link(rel='stylesheet' type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
         link(rel='stylesheet' type='text/css', href='https://fonts.googleapis.com/css?family=Roboto')
         link(rel='stylesheet' type='text/css', href='css/main.css')
         script(src='https://use.fontawesome.com/a80d9ff4a0.js')
     body
         header
-            nav
-                a(class='main-nav-header' href='https://uci.edu', target='_blank') UCI
-                ul
-                    li
-                        a(href='#') About
+            nav(id='header-nav')
+                a(id='header-nav-heading' href='https://uci.edu', target='_blank') UCI
+                ul(id='header-navbar')
+                    li(class='nav-item')
+                        a(href='#' class='header-nav-permalink') About
                         button(class='dropdown')
                             i(class='fa fa-caret-down')
-                    li
-                        a(href='#') Admissions
+                    li(class='nav-item')
+                        a(href='#' class='header-nav-permalink') Admissions
                         button(class='dropdown')
                             i(class='fa fa-caret-down')
-                    li
-                        a(href='#') Academics
+                    li(class='nav-item')
+                        a(href='#' class='header-nav-permalink') Academics
                         button(class='dropdown')
                             i(class='fa fa-caret-down')
-                    li
-                        a(href='#') Research
+                    li(class='nav-item')
+                        a(href='#' class='header-nav-permalink') Research
                         button(class='dropdown')
                             i(class='fa fa-caret-down')
-                    li
-                        a(href='#') Community
+                    li(class='nav-item')
+                        a(href='#' class='header-nav-permalink') Community
                         button(class='dropdown')
                             i(class='fa fa-caret-down')
-                //- #nav-right
-                //-     button(class='btn btn-dark') Donate
         main
             section(id='landing')
                 .container
-                    #header-overlay
-                        h1 Experience the Power of I
-                        h2 UCI is a place where, together, we make a world of difference
-            nav
-                ul
-                    li
-                        a(href='#') Top
-                    li
-                        a(href='#') The Buzz
-                    li
-                        a(href='#') News
-                    li
-                        a(href='#') Who We Are
-                    li
-                        a(href='#') Visit
-                    li
-                        a(href='#') Events
-                    li
-                        a(href='#') Arts & Athletics
-                    li
-                        a(href='#') Initiatives
-                    li
-                        a(href='#') Health
-                    li
-                        a(href='#') Alumni & Giving
-                    li
+                    #landing-overlay
+                        h1(id='landing-overlay-heading') Experience the Power of I
+                        h2(id='landing-overlay-subheading') UCI is a place where, together, we make a world of difference
+            nav(id='main-nav')
+                ul(id='main-nav-navbar')
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Top
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') The Buzz
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') News
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Who We Are
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Visit
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Events
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Arts & Athletics
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Initiatives
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Health
+                    li(class='nav-item')
+                        a(href='#' class='main-nav-permalink') Alumni & Giving
+                    li(class='nav-item')
                         a(href='#') Resources
             section(id='current-heading')
                 .container
                     #current-content
-                        h2 The Buzz
-                        h1 UCI opens doctoral programs to hundreds more students
-                        a(href='#') Campus aims to boost Ph.D. candidates by 35 percent over next five years
-
+                        h2(class='current-content-heading') The Buzz
+                        h1(class='current-content-subheading') UCI opens doctoral programs to hundreds more students
+                        a(href='#' class='current-content-permalink') Campus aims to boost Ph.D. candidates by 35 percent over next five years
                     .overlay-row
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') Launching tomorrow's wizards
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') Launching tomorrow's wizards
                                     p UCI's undergraduate research program boosts student success
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') Meet super dada
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') Meet super dada
                                     p Anteater alum teaches joys offatherhood through his company, fodada
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') First-generation flag bearer
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') First-generation flag bearer
                                     p UCI alum Eloy Oakley is first Latinoto lead state's community colleges
             section(id='news')
                 .container
                     #news-content
-                        h1 News
-                        .news-col
+                        h1(id='news-heading') News
+                        .news-section
                             h2
-                                a(href='#') Concrete jungle functions as carbon sink, UCI and other researchers find
+                                a(href='#' class='news-section-permalink') Concrete jungle functions as carbon sink, UCI and other researchers find
                             p Cement-based materials eventually reabsorb much of the CO2 released during creation
-                        .news-col
+                        .news-section
                             h2
-                                a(href='#') 9 UCI researchers named AAAS fellows
+                                a(href='#' class='news-section-permalink') 9 UCI researchers named AAAS fellows
                             p Honor is conferred for distinguished contributions to their fields
-                        .news-col
+                        .news-section
                             h2
-                                a(href='#') UCI professor awarded 2016 John Maddox Prize for Standing up for Science
+                                a(href='#' class='news-section-permalink') UCI professor awarded 2016 John Maddox Prize for Standing up for Science
                             p Elizabeth Loftus is recognized for pioneering work on malleability of human memory
                         .news-links
                                 ul
                                     li
-                                        a(href='#') Visit UCI News
+                                        a(href='#' class='news-links-permalink') Visit UCI News
                                     li
-                                        a(href='#') Media Inquiries
+                                        a(href='#' class='news-links-permalink') Media Inquiries
                                     li
-                                        a(href='#') Find an Expert
+                                        a(href='#' class='news-links-permalink') Find an Expert
             section(id='about')
                 .container
                     #about-content
-                        h1(class='large') Who We Are
+                        h1(class='about-header') Who We Are
                         p Founded in 1965, UCI is the youngest member of the prestigious Association of American Universities. The campus has produced three Nobel laureates and is known for its academic achievement, premier research, innovation and anteater mascot. Led by Chancellor Howard Gillman, UCI has more than 30,000 students and offers 192 degree programs. It’s located in one of the world’s safest and most economically vibrant communities and is Orange County’s second-largest employer, contributing $5 billion annually to the local economy.
                     .overlay-row
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') Academics
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') Academics
                                     p UCI is a center for quality education that fosters passionate, enthusiastic and ongoing expansion of knowledge and approaches to scholarship.
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') Research Programs
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') Research Programs
                                     p UCI is improving lives through the investigation, discovery and dissemination of knowledge in numerous forms to all levels of society.
                         .overlay-col
                             .overlay
                                 .overlay-contents
-                                    h3
-                                        a(href='#') Our Community
+                                    h3(class='overlay-heading')
+                                        a(href='#' class='overlay-permalink') Our Community
                                     p UCI students, faculty and staff reach beyond the classrooms and laboratories to address social issues and improve the human condition.
             section(id='campus-info')
                 .container
-                    #campus-content
-                        #campus-header
-                            h1(class='large') Visit
-                            p UCI combines the strengths of a major research university with the bounty of an incomparable Southern California location.
-                            button(class='btn btn-blue') Learn
-                        .right-col
-                            .overlay-col-right
-                                .overlay
-                                    h3
-                                        a(href='#') Campus Maps
-                                    p Visit the Campus Maps page for the best way to reach UCI and locate intended campus destinations, as well as nearby parking options.
-                                .overlay
-                                    h3
-                                        a(href='#') Visitor Center
-                                    p The Visitor Center welcomes prospective students and their parents, alumni and all visitors who want to know more about the university.
-                                .overlay
-                                    h3
-                                        a(href='#') Parking & Transportation
-                                    p Transportation & Distribution Services offers information on parking rates and timely updates on sustainable commuting options.
+                    #campus-info-content
+                        h1(class='campus-info-heading') Visit
+                        p UCI combines the strengths of a major research university with the bounty of an incomparable Southern California location.
+                        button(class='btn btn-blue') Learn
+                    .right-col
+                        .overlay-col-right
+                            .overlay
+                                h3(class='overlay-heading')
+                                    a(href='#' class='overlay-permalink') Campus Maps
+                                p Visit the Campus Maps page for the best way to reach UCI and locate intended campus destinations, as well as nearby parking options.
+                            .overlay
+                                h3(class='overlay-heading')
+                                    a(href='#' class='overlay-permalink') Visitor Center
+                                p The Visitor Center welcomes prospective students and their parents, alumni and all visitors who want to know more about the university.
+                            .overlay
+                                h3(class='overlay-heading')
+                                    a(href='#' class='overlay-permalink') Parking & Transportation
+                                p Transportation & Distribution Services offers information on parking rates and timely updates on sustainable commuting options.
             section(id='resources')
                 .container
-                    .row
-                        .row-contents(id='first')
+                    .resource-row
+                        .resource-row-contents(id='first-resource')
                             h3
-                                a(href='#') Work at UCI
+                                a(href='#' class='resource-permalink') Work at UCI
                             p UCI is a great place to work. Start your job search here.
-                    .row
-                        .row-contents(id='second')
+                    .resource-row
+                        .resource-row-contents(id='second-resource')
                             h3
-                                a(href='#') Emergency Preparedness
+                                a(href='#' class='resource-permalink') Emergency Preparedness
                             p Learn simple steps to be better prepared for an emergency - at work and at home.
-                    .row
-                        .row-contents(id='third')
+                    .resource-row
+                        .resource-row-contents(id='third-resource')
                             h3
-                                a(href='#') Disability Services Center
+                                a(href='#' class='resource-permalink') Disability Services Center
                             p Resources for students, parents and faculty members.
             footer
                 .container
                     #social-media
                         ul(id='social-media-list')
                             li
-                                a(href='#') Facebook
+                                a(href='#' class='footer-permalink') Facebook
                             li
-                                a(href='#') Twitter
+                                a(href='#' class='footer-permalink') Twitter
                             li
-                                a(href='#') Youtube
+                                a(href='#' class='footer-permalink') Youtube
                             li
-                                a(href='#') Instagram
+                                a(href='#' class='footer-permalink') Instagram
                             li
-                                a(href='#') Flickr
+                                a(href='#' class='footer-permalink') Flickr
                         
                         ul
                             li
-                                a(href='#') Social Media Directory
+                                a(href='#' class='footer-permalink') Social Media Directory
                     #contact
                         ul(id='contact-list')
                             li
-                                a(href='#') UCI Gmail
+                                a(href='#' class='footer-permalink') UCI Gmail
                             li
-                                a(href='#') Webmail
+                                a(href='#' class='footer-permalink') Webmail
                             li
-                                a(href='#') EEE
+                                a(href='#' class='footer-permalink') EEE
                             li
-                                a(href='#') Work at UCI
+                                a(href='#' class='footer-permalink') Work at UCI
                             li
-                                a(href='#') Emergency Preparedness
+                                a(href='#' class='footer-permalink') Emergency Preparedness
                             li
-                                a(href='#') Disability Services
+                                a(href='#' class='footer-permalink') Disability Services
                             li
-                                a(href='#') Office of the Chancellor
+                                a(href='#' class='footer-permalink') Office of the Chancellor
                         ul
                             li
-                                a(href='#') University of California
+                                a(href='#' class='footer-permalink') University of California
                     ul(id='misc-list')
                         li
-                            a(href='#') Feedback
+                            a(href='#' class='footer-permalink') Feedback
                         li
-                            a(href='#') Privacy Policy
+                            a(href='#' class='footer-permalink') Privacy Policy
                         li
-                            a(href='#') Media Inquiries
+                            a(href='#' class='footer-permalink') Media Inquiries
                         li
-                            a(href='#') Accreditation Information
+                            a(href='#' class='footer-permalink') Accreditation Information
                         li
-                            a(href='#') Clery act
+                            a(href='#' class='footer-permalink') Clery act
 
                     #address
                         p University of California, Irvine #[br] Irvine, CA 92697 #[br] 949-24-5011
 
                     #copyright
-                        a(href='#') &copy 2016 UC Regents
+                        a(href='#' class='footer-permalink') &copy 2016 UC Regents
