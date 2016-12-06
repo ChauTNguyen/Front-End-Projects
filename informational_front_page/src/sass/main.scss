@@ -4,30 +4,23 @@
 @import "scaffolding";
 // Button
 @import "button";
-#header-nav {
-    ul {
-        display: inline;
-        li {
-            display: inline-block;
-            padding: 1em;
-        }
-    }
+#header-navbar {
+    display: inline;
 }
 
 .header-nav-permalink {
     padding: 1em;
     color: $header-nav-permalink;
-    &:hover {
-        background-color: grey;
-        color: white;
-    }
     &:visited {
         color: $header-nav-permalink;
     }
 }
 
+.header-nav-permalink:hover {
+    color: white;
+}
+
 #header-nav-heading {
-    display: inline;
     padding: 1em;
     font-weight: bold;
     font-size: 1.1em;
@@ -67,19 +60,19 @@
 
 .nav-item {
     display: inline-block;
+    padding: 1em;
 }
 
 .main-nav-permalink {
-    display: block;
     padding: 1em;
     color: white;
-    &:hover {
-        background-color: $cl-primary;
-    }
     &:visited {
-        display: block;
         color: white;
     }
+}
+
+.main-nav-permalink:hover {
+    background-color: $cl-primary;
 }
 
 .current-content-permalink {
@@ -99,12 +92,13 @@
 
 .overlay-permalink {
     color: white;
-    &:hover {
-        text-decoration: none;
-    }
     &:visited {
         color: white;
     }
+}
+
+.overlay-permalink:hover {
+    text-decoration: none;
 }
 
 .overlay-heading {
@@ -169,6 +163,10 @@
     }
 }
 
+.resource-permalink:hover {
+    text-decoration: none;
+}
+
 #first-resource {
     background-color: $cl-dark-primary;
 }
@@ -187,12 +185,13 @@ footer {
 
 .footer-permalink {
     color: $font-color;
-    &:hover {
-        text-decoration: none;
-    }
     &:visited {
         color: $font-color;
     }
+}
+
+.footer-permalink:hover {
+    text-decoration: none;
 }
 
 #social-media,
