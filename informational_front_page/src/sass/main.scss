@@ -28,11 +28,21 @@
     letter-spacing: 2px;
 }
 
-.dropdown {
-    color: #757575;
+.dropdown-container {
     background-color: transparent;
     border: none;
+    color: #757575;
     outline: none;
+}
+
+.dropdown-arrow:hover {
+    color: white;
+}
+
+.dropdown-arrow:before {
+    content: '\25BC';
+    font-size: .6em;
+    vertical-align: middle;
 }
 
 #landing-overlay {
