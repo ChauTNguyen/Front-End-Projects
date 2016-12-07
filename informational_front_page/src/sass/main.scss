@@ -9,7 +9,7 @@
 }
 
 .header-nav-permalink {
-    padding: 1em;
+    padding: .5em;
     color: $header-nav-permalink;
     &:visited {
         color: $header-nav-permalink;
@@ -70,11 +70,11 @@
 
 .nav-item {
     display: inline-block;
-    padding: 1em;
+    padding: .5em;
 }
 
 .main-nav-permalink {
-    padding: 1em;
+    padding: .5em;
     color: white;
     &:visited {
         color: white;
