@@ -41,6 +41,8 @@ html(lang="en")
                     #landing-overlay
                         h1(id='landing-overlay-heading') Experience the Power of I
                         h2(id='landing-overlay-subheading') UCI is a place where, together, we make a world of difference
+                    #scroll-overlay
+                        button(id='scroll-arrow')
             nav(id='main-nav')
                 ul(id='main-nav-navbar')
                     li(class='nav-item')
@@ -94,26 +96,23 @@ html(lang="en")
                 .container
                     #news-content
                         h1(id='news-heading') News
-                        .news-section
-                            h2
-                                a(href='#' class='news-section-permalink') Concrete jungle functions as carbon sink, UCI and other researchers find
-                            p Cement-based materials eventually reabsorb much of the CO2 released during creation
-                        .news-section
-                            h2
-                                a(href='#' class='news-section-permalink') 9 UCI researchers named AAAS fellows
-                            p Honor is conferred for distinguished contributions to their fields
-                        .news-section
-                            h2
-                                a(href='#' class='news-section-permalink') UCI professor awarded 2016 John Maddox Prize for Standing up for Science
-                            p Elizabeth Loftus is recognized for pioneering work on malleability of human memory
+                        .news-row
+                            .news-section
+                                h2
+                                    a(href='#' class='news-section-permalink') Concrete jungle functions as carbon sink, UCI and other researchers find
+                                p Cement-based materials eventually reabsorb much of the CO2 released during creation
+                            .news-section
+                                h2
+                                    a(href='#' class='news-section-permalink') 9 UCI researchers named AAAS fellows
+                                p Honor is conferred for distinguished contributions to their fields
+                            .news-section
+                                h2
+                                    a(href='#' class='news-section-permalink') UCI professor awarded 2016 John Maddox Prize for Standing up for Science
+                                p Elizabeth Loftus is recognized for pioneering work on malleability of human memory
                         .news-links
-                                ul
-                                    li
-                                        a(href='#' class='news-links-permalink') Visit UCI News
-                                    li
-                                        a(href='#' class='news-links-permalink') Media Inquiries
-                                    li
-                                        a(href='#' class='news-links-permalink') Find an Expert
+                            a(href='#' class='news-links-permalink') Visit UCI News
+                            a(href='#' class='news-links-permalink') Media Inquiries
+                            a(href='#' class='news-links-permalink') Find an Expert
             section(id='about')
                 .container
                     #about-content
@@ -229,3 +228,4 @@ html(lang="en")
 
                     #copyright
                         a(href='#' class='footer-permalink') &copy 2016 UC Regents
+    script(src='js/index.js')

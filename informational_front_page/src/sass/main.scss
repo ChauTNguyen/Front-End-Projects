@@ -45,6 +45,10 @@
     vertical-align: middle;
 }
 
+#landing {
+    position: relative;
+}
+
 #landing-overlay {
     text-align: center;
     padding-top: 10px;
@@ -61,6 +65,41 @@
 
 #landing-overlay-subheading {
     color: $cl-accent;
+}
+
+#scroll-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 48px;
+    margin-left: -50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#scroll-arrow {
+    font-size: 34px;
+    color: white;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+#scroll-arrow:before {
+    display: block;
+    margin-top: 5px;
+    content: "\21D3";
+}
+
+#scroll-overlay:hover #scroll-arrow:before {
+    display: none;
+}
+
+#scroll-overlay:hover #scroll-arrow:after {
+    vertical-align: baseline;
+    font-size: 16px;
+    content: 'SCROLL';
 }
 
 #main-nav {
@@ -85,8 +124,16 @@
     background-color: $cl-primary;
 }
 
+.current-content-heading,
+.current-content-subheading {
+    color: $cl-dark-primary;
+}
+
 .current-content-permalink {
     color: $font-color;
+    &:hover {
+        text-decoration: none;
+    }
     &:visited {
         color: $font-color;
     }
@@ -132,9 +179,16 @@
 .news-section-permalink,
 .news-links-permalink {
     color: $cl-dark-primary;
+    &:hover {
+        text-decoration: none;
+    }
     &:visited {
         color: $cl-dark-primary;
     }
+}
+
+.news-links .news-links-permalink {
+    display: block;
 }
 
 #about {
@@ -237,6 +291,13 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+    .news-links {
+        text-align: center;
+    }
+    .news-links .news-links-permalink {
+        display: inline-block;
+        padding: 1em;
+    }
     #social-media,
     #social-media-list,
     #contact,
@@ -263,6 +324,10 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+    .current-content-heading,
+    .current-content-subheading {
+        text-align: center;
+    }
     .overlay-row {
         padding-top: 250px;
         width: 100%;
@@ -285,8 +350,11 @@ footer {
             }
         }
     }
-    #campus-info .container {
-        overflow: hidden;
+    #campus-info {
+        .container {
+            overflow: hidden; // need this to give context form
+            // the overlay float-right
+        }
     }
     #campus-info-content {
         display: inline-block;
@@ -304,6 +372,18 @@ footer {
             display: block;
             max-width: 284px;
         }
+    }
+    #news-row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 -10px;
+    }
+    .news-section {
+        flex: 1 1;
+        vertical-align: top;
+        max-width: 280px;
+        display: inline-block;
+        margin: 0 10px;
     }
     footer {
         .container {

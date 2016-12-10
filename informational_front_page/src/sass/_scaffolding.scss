@@ -24,11 +24,17 @@ nav a {
 }
 
 #landing {
-    height: 100vh;
+    height: 95.5vh;
+    background-image: url('../images/landing.jpg');
+    background-position: 50% 0;
 }
 
 #landing-overlay {
     background-color: $cl-primary;
+}
+
+#about .container {
+    background-image: url('../images/about.jpg');
 }
 
 #current-heading,
@@ -57,8 +63,15 @@ footer {
 
 @media only screen and (min-width: 992px) {
     .container {
-        width: 75%;
         max-width: 1024px;
         margin: 0 auto;
+    }
+    #current-heading .container {
+        background-image: url('../images/current-heading.jpg');
+        padding-bottom: 1em;
+        background-position: 50% 0;
+    }
+    #campus-info .container {
+        background-image: url('../images/visit.jpg');
     }
 }
