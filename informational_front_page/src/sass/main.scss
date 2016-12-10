@@ -324,8 +324,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
-    .current-content-heading,
-    .current-content-subheading {
+    #current-content {
         text-align: center;
     }
     .overlay-row {
@@ -338,7 +337,7 @@ footer {
         margin: 0 -10px;
     }
     .overlay-col {
-        padding-left: 15px;
+        padding-left: 22px;
         margin: 0 10px;
         flex: 1 1;
         .overlay {
@@ -349,6 +348,12 @@ footer {
                 padding: 1em;
             }
         }
+    }
+    #current-heading .overlay {
+        height: 164px;
+    }
+    #news .overlay {
+        height: 212px;
     }
     #campus-info {
         .container {

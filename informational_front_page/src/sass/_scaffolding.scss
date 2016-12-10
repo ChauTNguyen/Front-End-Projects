@@ -33,6 +33,30 @@ nav a {
     background-color: $cl-primary;
 }
 
+#current-heading {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#current-heading .container {
+    padding-bottom: 1em;
+}
+
+#current-heading:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background-image: url('../images/current-heading.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+}
+
 #about .container {
     background-image: url('../images/about.jpg');
 }
@@ -66,10 +90,8 @@ footer {
         max-width: 1024px;
         margin: 0 auto;
     }
-    #current-heading .container {
-        background-image: url('../images/current-heading.jpg');
-        padding-bottom: 1em;
-        background-position: 50% 0;
+    #current-heading:before {
+        opacity: 1;
     }
     #campus-info .container {
         background-image: url('../images/visit.jpg');
