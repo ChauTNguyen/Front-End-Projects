@@ -12,34 +12,43 @@ body {
 }
 
 .main-nav {
-    transition: 0.2s;
+    transition: $transition-duration;
     transform: translate(0, 0);
     transform: translate3d(0, 0);
 }
 
 #wrapper {
-    transition: 0.2s;
+    transition: $transition-duration;
     transform: translate(0, 0);
     transform: translate3d(0, 0);
 }
 
 .show-compact-nav #wrapper {
-    transition: 0.2s;
-    transform: translate(275px, 0);
-    transform: translate3d(275px, 0, 0);
+    transition: $transition-duration;
+    transform: translate($compact-nav-width, 0);
+    transform: translate3d($compact-nav-width, 0, 0);
     opacity: 0.1;
 }
 
 .show-compact-nav .main-nav {
     background-color: white;
-    transition: 0.2s;
-    transform: translate(275px, 0);
-    transform: translate3d(275px, 0, 0);
+    transition: $transition-duration;
+    transform: translate($transition, 0);
+    transform: translate3d($transition, 0, 0);
+}
+
+.md-navbar {
+    transition: $transition-duration;
+    opacity: 1;
+}
+
+.show-compact-nav .md-navbar {
+    opacity: 0;
 }
 
 .main-nav {
-    width: 275px;
-    height: 60%;
+    width: $compact-nav-width;
+    min-height: 360px;
     position: fixed;
     top: 20%;
     left: -275px;
@@ -277,8 +286,9 @@ body {
 .footer-permalink {
     color: #565656;
     text-decoration: none;
+    transition: 1s;
     &:hover {
-        color: #565656;
+        color: #AFAFAF !important;
         text-decoration: none;
     }
     &:visited {
@@ -290,19 +300,36 @@ body {
     padding-bottom: 30px;
 }
 
-.footer-utility-links {
+.footer-utility-links,
+.sponsored-by {
     padding-top: 30px;
 }
 
+.footer h4,
 .footer p,
-.footer a {
-    color: $bg-color;
+.footer-permalink {
     font-family: Helvetica, serif;
 }
 
 .sponsors {
     width: 311px;
     height: 70px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .show-compact-nav .md-navbar {
+        display: none;
+    }
+    .main-nav {
+        top: 0;
+        height: 100vh;
+    }
+    .compact-nav-item {
+        padding: 0.5em;
+    }
+    .compact-nav-link {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 992px) {

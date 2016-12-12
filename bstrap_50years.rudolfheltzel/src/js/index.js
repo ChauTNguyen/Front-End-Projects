@@ -12,7 +12,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#wrapper').hide().fadeIn(1000);
+    $('body').hide().fadeIn(1000);
 
     $('.toggle-nav').click(function() {
         $('body').toggleClass('show-compact-nav');
