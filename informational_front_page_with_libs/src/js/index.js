@@ -56,7 +56,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var currentScrollPos = $(this).scrollTop();
         if (currentScrollPos >= posOfNav) {
-            console.log('greater')
             if (currentScrollPos > lastScrollPos) {
                 $('body').addClass('hide-nav');
                 $('#main-nav').removeClass('fix-top');

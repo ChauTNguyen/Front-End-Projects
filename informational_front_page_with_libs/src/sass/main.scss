@@ -136,14 +136,14 @@
 }
 
 .overlay-permalink {
+    text-decoration: underline;
     color: white;
     &:visited {
         color: white;
     }
-}
-
-.overlay-permalink:hover {
-    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .overlay-heading {
@@ -167,6 +167,7 @@
 .news-section-permalink,
 .news-links-permalink {
     color: $cl-dark-primary;
+    text-decoration: underline;
     &:hover {
         text-decoration: none;
     }
@@ -209,14 +210,14 @@
 }
 
 .resource-permalink {
+    text-decoration: underline;
     color: white;
     &:visited {
         color: white;
     }
-}
-
-.resource-permalink:hover {
-    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 #first-resource {
