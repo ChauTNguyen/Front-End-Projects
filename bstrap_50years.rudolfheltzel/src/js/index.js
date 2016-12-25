@@ -22,12 +22,28 @@ $(document).ready(function() {
     $('.remove-nav').click(function() {
         $('body').removeClass('show-compact-nav');
         return false;
-    })
+    });
 
     $('#wrapper').click(function() {
         if ($('body').hasClass('show-compact-nav')) {
             $('body').removeClass('show-compact-nav');
             return false;
         }
+    });
+
+    var hoverableImages = [$('.rudolf'), $('.artist-1'), $('.artist-2')];
+
+    function toggleMoveCaption() {
+        $('body').toggleClass('move-caption');
+    }
+
+    function removeCaption() {
+        $('body').removeClass('move-caption');
+    }
+
+    $.each(hoverableImages, function() {
+        $(this).hover(
+            toggleMoveCaption, removeCaption
+        );
     });
 });

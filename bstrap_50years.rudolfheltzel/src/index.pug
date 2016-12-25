@@ -10,10 +10,10 @@ html(lang="en")
 
         title 50 Years of Rudolf Heltzel
 
-        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css' integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi' crossorigin='anonymous')
-        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans|Raleway' rel='stylesheet')
+        link(inline rel='stylesheet' href='lib/bootstrap.min.css' integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi' crossorigin='anonymous')
+        link(inline href='lib/merriweather-sans+raleway.css' rel='stylesheet')
         <!-- Bootstrap CSS -->
-        link(rel='stylesheet' type='text/css', href='css/main.css')
+        link(inline rel='stylesheet' type='text/css', href='css/main.css')
     body
         #site-wrap
             nav(class='md-navbar navbar navbar-fixed-top navbar-dark bg-inverse')
@@ -49,11 +49,11 @@ html(lang="en")
                                     h1(class='landing-title') Rudolf Heltzel <br> A Celebration of 50 Years<br><br>
                                     h2(class='title-caption') Opening night &mdash; 6pm on the 4th of November 2016 at the Royal Hibernian Academy
                             img(class='date-circle' src='images/date-circle.svg')
-                        .lg-img-container
-                            a(href='#about')
+                        .lg-img-container#rudolf-container
+                            a(class='lg-img-permalink' href='#about')
                                 img(class='rudolf' src='images/rudolf-1.jpg')
-
-                            
+                                span(class='caption') The Artist<br>Rudolf Heltzel &mdash; A Living Renaissance Master
+                          
                     section(id='about')
                         .container
                             .row
@@ -61,12 +61,14 @@ html(lang="en")
                                     h5(class='highlight') The Artist
                                     h3(class='claim') Rudolf Heltzel is unique &mdash; a master of design and technical expertise in jewellery making, with extraordinary artistic talent.
                                     p(class='paragraph') Rudolf Heltzel is renowned as one of the finest haute couture jewellery designers worldwide. Over the past six decades, the originality and quality of Rudolf's work has set him apart. Each of his pieces has a timeless aesthetic, is crafted meticulously by hand using some of the world’s oldest jewellery techniques, and has inimitable balance. His thoughtful designs and impeccable workmanship have won him international acclaim.
-                                .lg-img-container
-                                    a(href='#gallery')
-                                        img(class='artist-1' src='images/artist-1.jpg')
-                                .lg-img-container
-                                    a(href='#gallery')
-                                        img(class='artist-2' src='images/artist-2.jpg')
+                        .lg-img-container#artist-1-container
+                            a(class='lg-img-permalink' href='#gallery')
+                                img(class='artist-1' src='images/artist-1.jpg')
+                                span(class='caption') Collection 01<br>&mdash; The Rock Crystal Treasure Cave
+                        .lg-img-container#artist-2-container
+                            a(class='lg-img-permalink' href='#gallery')
+                                img(class='artist-2' src='images/artist-2.jpg')
+                                span(class='caption') The Collection 02<br>&mdash; The Tourmaline Butterflies
                                 
                     section(id='gallery')
                         .container
@@ -125,7 +127,7 @@ html(lang="en")
                                     img(class='sponsors' src='images/sponsors.png')
                         
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script inline src="lib/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script inline src="lib/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script inline src="lib/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
         <script inline type='text/javascript' src='js/index.js'></script> 
