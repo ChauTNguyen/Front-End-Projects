@@ -1,0 +1,26 @@
+@import "variables";
+.btn {
+    font-size: 16px;
+    padding: 1em;
+    border: none;
+    @include border-radius(10px);
+    outline: none;
+}
+
+.btn-blue {
+    color: white;
+    background-color: $cl-primary;
+    transition-duration: 0.4s;
+    &:hover {
+        background-color: $cl-dark-primary;
+    }
+}
+
+.btn-dark {
+    background-color: grey;
+    color: white;
+    transition-duration: 0.4s;
+    &:hover {
+        background-color: #2f4f4f;
+    }
+}

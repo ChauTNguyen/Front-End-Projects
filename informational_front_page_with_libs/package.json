@@ -1,7 +1,7 @@
 {
-    "name": "informational-front-page",
+    "name": "informational-front-page-2",
     "version": "1.0.0",
-    "description": "Simple Informational Page imitating UCI's website's front page without the use of libraries.",
+    "description": "Simple Informational Page imitating UCI's website's front page using libraries (Bootstrap and jQuery).",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "deploy": "cd dist; surge ./; cd ..;"

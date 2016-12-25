@@ -1,0 +1,415 @@
+// Base
+@import "variables";
+// Components
+@import "scaffolding";
+// Button
+@import "button";
+.nav-link {
+    // Need this to make it so we can store
+    // two links within one nav item.
+    display: inline-block !important;
+    height: 100%;
+    &:hover {
+        background-color: #515151 !important;
+    }
+}
+
+.dropdown-toggle {
+    display: inline-block !important;
+    margin-left: 5px !important;
+    width: 20px;
+}
+
+#landing {
+    position: relative;
+}
+
+#landing-overlay {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+}
+
+#landing-overlay-heading {
+    color: white;
+}
+
+#landing-overlay-subheading {
+    color: $cl-accent;
+}
+
+#scroll-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 48px;
+    margin-left: -50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#scroll-arrow {
+    font-size: 30px;
+    color: white;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+#scroll-arrow:before {
+    display: block;
+    margin-top: 5px;
+    content: "\21D3";
+}
+
+#scroll-overlay:hover #scroll-arrow:before {
+    display: none;
+}
+
+#scroll-overlay:hover #scroll-arrow:after {
+    vertical-align: baseline;
+    font-size: 16px;
+    content: 'SCROLL';
+}
+
+#main-nav {
+    background-color: $cl-dark-primary;
+    margin-bottom: 2em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.hide-nav #main-nav {
+    opacity: 0;
+}
+
+#main-nav .nav-item {
+    display: inline-block;
+    padding: .5em;
+}
+
+.fix-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.main-nav-permalink {
+    padding: .5em;
+    color: white;
+    &:visited {
+        color: white;
+    }
+}
+
+.main-nav-permalink:hover {
+    background-color: $cl-primary;
+}
+
+.current-content-heading,
+.current-content-subheading {
+    color: $cl-dark-primary;
+}
+
+.current-content-permalink {
+    color: $font-color;
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        color: $font-color;
+    }
+}
+
+.overlay {
+    padding: 1em;
+    display: block;
+    background-color: $cl-light-primary;
+    color: white;
+    margin: 2em 1em;
+}
+
+.overlay-permalink {
+    color: white;
+    &:visited {
+        color: white;
+    }
+}
+
+.overlay-permalink:hover {
+    text-decoration: none;
+}
+
+.overlay-heading {
+    margin: 0;
+}
+
+#news-heading,
+#current-content-subheading,
+#current-content-heading,
+#campus-info-heading {
+    color: $cl-dark-primary;
+}
+
+#news-heading,
+#current-content-subheading,
+#current-content-heading,
+#campus-info-heading {
+    margin: 0;
+}
+
+.news-section-permalink,
+.news-links-permalink {
+    color: $cl-dark-primary;
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        color: $cl-dark-primary;
+    }
+}
+
+.news-links .news-links-permalink {
+    display: block;
+}
+
+#about {
+    .container {
+        background-color: black;
+    }
+}
+
+#about-content {
+    color: white;
+}
+
+#campus-info {
+    .container {
+        background-color: rgba(2, 136, 209, 0.5);
+    }
+}
+
+#current-content,
+#news-content,
+#about-content,
+#campus-info-content {
+    padding: 2em;
+}
+
+.resource-row-contents {
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.resource-permalink {
+    color: white;
+    &:visited {
+        color: white;
+    }
+}
+
+.resource-permalink:hover {
+    text-decoration: none;
+}
+
+#first-resource {
+    background-color: $cl-dark-primary;
+}
+
+#second-resource {
+    background-color: $cl-primary;
+}
+
+#third-resource {
+    background-color: $cl-light-primary;
+}
+
+footer {
+    background-color: #d3d3d3;
+}
+
+.footer-permalink {
+    color: $font-color;
+    &:visited {
+        color: $font-color;
+    }
+}
+
+.footer-permalink:hover {
+    text-decoration: none;
+}
+
+#social-media,
+#social-media-list,
+#contact-list {
+    padding-bottom: 10px;
+}
+
+#social-media-list {
+    li {
+        padding-bottom: 15px;
+    }
+}
+
+#contact-list {
+    padding-top: 20px;
+}
+
+#uc {
+    padding-bottom: 20px;
+}
+
+#misc-list {
+    padding-top: 40px;
+}
+
+#address {
+    padding-top: 20px;
+}
+
+#copyright {
+    text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+    .news-links {
+        text-align: center;
+    }
+    .news-links .news-links-permalink {
+        display: inline-block;
+        padding: 1em;
+    }
+    #social-media,
+    #social-media-list,
+    #contact,
+    #uc,
+    #address,
+    #misc-list {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #social-media {
+        width: 50%;
+    }
+    #misc-list {
+        width: 50%;
+        ul {
+            li {
+                margin-right: -4px;
+            }
+        }
+    }
+    #contact-list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #current-content {
+        text-align: center;
+    }
+    .overlay-row {
+        padding-top: 250px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin: 0 -10px;
+    }
+    .overlay-col {
+        padding-left: 22px;
+        margin: 0 10px;
+        flex: 1 1;
+        .overlay {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            .overlay-contents {
+                padding: 1em;
+            }
+        }
+    }
+    #current-heading .overlay {
+        height: 164px;
+    }
+    #about .overlay {
+        height: 212px;
+    }
+    #campus-info {
+        .container {
+            overflow: hidden; // need this to give context form
+            // the overlay float-right
+        }
+    }
+    #campus-info-content {
+        display: inline-block;
+        width: 40%;
+    }
+    .right-col {
+        float: right;
+        width: 50%;
+        vertical-align: top;
+        margin-top: 50px;
+    }
+    .overlay-col-right {
+        float: right;
+        .overlay {
+            display: block;
+            max-width: 284px;
+        }
+    }
+    #news-row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 -10px;
+    }
+    .news-section {
+        flex: 1 1;
+        vertical-align: top;
+        max-width: 280px;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    footer {
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+        }
+    }
+    #social-media,
+    #contact,
+    #misc-list,
+    #address {
+        flex: 1 1;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #resources {
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            min-height: 225px;
+        }
+    }
+    .resource-row {
+        flex: 1 1;
+    }
+    .resource-row-contents {
+        height: 100%;
+    }
+}

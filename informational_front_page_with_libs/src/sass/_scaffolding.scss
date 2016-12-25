@@ -16,16 +16,21 @@ ul {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-#header-nav {
-    background-color: $cl-nav;
+.navbar {
+    // to allow myself to use 100vh on #landing
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 #landing {
-    height: 95.5vh;
-    background-image: url('../images/landing.jpg');
+    height: 100vh;
+    background-image: url('images/landing.jpg');
     background-position: 50% 0;
 }
 
@@ -53,13 +58,13 @@ nav a {
     height: 100%;
     z-index: -1;
     opacity: .5;
-    background-image: url('../images/current-heading.jpg');
+    background-image: url('images/current-heading.jpg');
     background-position: 50% 0;
     background-size: cover;
 }
 
 #about .container {
-    background-image: url('../images/about.jpg');
+    background-image: url('images/about.jpg');
 }
 
 #current-heading,
@@ -95,6 +100,6 @@ footer {
         opacity: 1;
     }
     #campus-info .container {
-        background-image: url('../images/visit.jpg');
+        background-image: url('images/visit.jpg');
     }
 }

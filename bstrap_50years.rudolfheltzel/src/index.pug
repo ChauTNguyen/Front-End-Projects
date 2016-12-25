@@ -16,7 +16,6 @@ html(lang="en")
         link(inline rel='stylesheet' type='text/css', href='css/main.css')
     body
         #site-wrap
-            header
             nav(class='md-navbar navbar navbar-fixed-top navbar-dark bg-inverse')
                 .md-navbar-container
                     a(href='#')
@@ -30,8 +29,8 @@ html(lang="en")
                             a(class='nav-link long-nav-link' href='#gallery') Exhibition
                         li(class='nav-item long-nav-item')
                             a(class='nav-link long-nav-link' href='#contact-rsvp') RSVP
-            div(class='compact-nav-container')
-                div(class='compact-nav-top-block remove-nav')
+            .compact-nav-container
+                .compact-nav-top-block.remove-nav
                 nav(class='compact-nav nav navbar-nav float-md-right')
                         button(class='toggle-nav compact-menu-close', type='button') x
                         ul(class='compact-menu')
@@ -44,7 +43,7 @@ html(lang="en")
                             li(class='compact-nav-item')
                                 small 03<br>
                                 a(class='compact-nav-link remove-nav' href='#contact-rsvp') RSVP
-                div(class='compact-nav-bottom-block remove-nav')
+                .compact-nav-bottom-block.remove-nav
             #wrapper
                 main
                     section(id='landing')
