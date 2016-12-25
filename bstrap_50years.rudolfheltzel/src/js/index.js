@@ -33,17 +33,14 @@ $(document).ready(function() {
 
     var hoverableImages = [$('.rudolf'), $('.artist-1'), $('.artist-2')];
 
-    function toggleMoveCaption() {
-        $('body').toggleClass('move-caption');
-    }
-
-    function removeCaption() {
-        $('body').removeClass('move-caption');
-    }
-
     $.each(hoverableImages, function() {
         $(this).hover(
-            toggleMoveCaption, removeCaption
+            function() {
+                $(this).parent().toggleClass('move-caption');
+            },
+            function() {
+                $(this).parent().removeClass('move-caption');
+            }
         );
     });
 });

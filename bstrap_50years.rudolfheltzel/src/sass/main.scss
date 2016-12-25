@@ -135,15 +135,6 @@ body {
     height: auto;
 }
 
-// .rudolf,
-.artist-1,
-.artist-2 {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 .rsvp {
     padding-bottom: 5px;
 }
@@ -195,6 +186,11 @@ body {
     position: relative;
 }
 
+.lg-img-permalink {
+    display: block;
+    margin: 0 auto;
+}
+
 .rudolf,
 .artist-1,
 .artist-2 {
@@ -207,17 +203,11 @@ body {
     opacity: 0.2;
 }
 
-.lg-img-permalink {
-    display: block;
-    margin: 0 auto;
-}
-
 .caption {
     position: absolute;
     bottom: 25%;
     right: 25%;
     color: white;
-    z-index: 2;
     // transition code
     transition: 1s;
     opacity: 0;
