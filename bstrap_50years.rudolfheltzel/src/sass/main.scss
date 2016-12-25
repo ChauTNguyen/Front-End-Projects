@@ -1,5 +1,6 @@
 @import 'variables';
 body {
+    display: none; // Necessary for fade-in to work
     line-height: 1.6;
     font-size: 16px;
     background-color: $bg-color;
@@ -11,16 +12,27 @@ body {
     height: 100%;
 }
 
-.main-nav {
+.compact-nav-container {
     transition: $transition-duration;
     transform: translate(0, 0);
     transform: translate3d(0, 0);
+    width: $compact-nav-width;
+    height: 100%;
+    position: fixed;
+    left: -275px;
+    z-index: 999;
+    font-family: $heading-font;
 }
 
 #wrapper {
     transition: $transition-duration;
     transform: translate(0, 0);
     transform: translate3d(0, 0);
+}
+
+.hide-nav .compact-nav-container,
+.hide-nav .md-navbar {
+    transform: translate(0, -100px);
 }
 
 .show-compact-nav #wrapper {
@@ -30,30 +42,40 @@ body {
     opacity: 0.1;
 }
 
-.show-compact-nav .main-nav {
-    background-color: white;
+.show-compact-nav .compact-nav-container {
     transition: $transition-duration;
     transform: translate($transition, 0);
     transform: translate3d($transition, 0, 0);
 }
 
 .md-navbar {
+    width: 100%;
     transition: $transition-duration;
     opacity: 1;
+    padding-top: 100px;
+}
+
+.md-navbar-remove-height {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .show-compact-nav .md-navbar {
     opacity: 0;
+    z-index: -9999;
 }
 
-.main-nav {
-    width: $compact-nav-width;
-    min-height: 360px;
-    position: fixed;
+.compact-nav-top-block,
+.compact-nav-bottom-block {
+    height: 20%;
+}
+
+.compact-nav {
     top: 20%;
-    left: -275px;
-    z-index: 999;
-    font-family: $heading-font;
+    height: 60%;
+    width: 100%;
+    min-height: 360px;
+    background-color: white;
 }
 
 .compact-nav-item {
@@ -74,6 +96,7 @@ body {
 }
 
 .md-navbar:before {
+    // Fixed nav logic
     content: ' ';
     position: absolute;
     left: 0;
@@ -87,6 +110,14 @@ body {
 
 .md-navbar {
     background-color: transparent !important;
+}
+
+.long-nav {
+    width: 50%;
+}
+
+.long-nav-item {
+    padding: 0 0.5em;
 }
 
 .long-nav-link {
@@ -107,7 +138,7 @@ body {
     outline: none;
 }
 
-.main-nav .toggle-nav {
+.compact-nav .toggle-nav {
     color: black !important;
 }
 
@@ -142,10 +173,6 @@ body {
 .landing-title {
     font-family: $heading-font;
     color: white;
-}
-
-.navbar {
-    padding-top: 35px;
 }
 
 .title {
@@ -205,20 +232,21 @@ body {
 
 .caption {
     position: absolute;
-    bottom: 25%;
-    right: 25%;
+    bottom: 10%;
+    right: 15%;
     color: white;
     // transition code
     transition: 1s;
     opacity: 0;
     transform: translate(0, 0);
     transform: translate3d(0, 0);
+    z-index: -9999; // Necessary -- blocks out hoverable area
 }
 
 .move-caption .caption {
     opacity: 1;
-    transform: translate(-13%, 0);
-    transform: translate3d(-13%, 0, 0);
+    transform: translate(-8%, 0);
+    transform: translate3d(-8%, 0, 0);
 }
 
 .carousel-slide {
@@ -360,11 +388,18 @@ body {
     height: 70px;
 }
 
+@media only screen and (min-width: 768px) {
+    .md-navbar-container {
+        max-width: 72.5%;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     .show-compact-nav .md-navbar {
         display: none;
     }
-    .main-nav {
+    .compact-nav {
         top: 0;
         height: 100vh;
     }
