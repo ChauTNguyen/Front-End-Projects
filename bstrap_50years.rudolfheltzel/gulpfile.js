@@ -21,13 +21,13 @@ gulp.task('css_minify', function() {
         .pipe(cssnano())
         .pipe(sourcemaps.write('./'))
 
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./pre-build/css/'));
 });
 
 gulp.task('js_minify', function() {
     gulp.src('./js/**/*', { cwd: 'src' })
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'));
+        .pipe(gulp.dest('./pre-build/js/'));
 });
 
 gulp.task('imagemin', function() {
@@ -41,21 +41,29 @@ gulp.task('imagemin', function() {
 //         .pipe(gulp.dest('./dist/'));
 // });
 
-
 gulp.task('pugify', function() {
     return gulp.src('index.pug', { cwd: 'src' })
         .pipe(pug())
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./pre-build/'));
 });
 
-gulp.task('inlinesource', ['pugify'], function() {
-    return gulp.src('./dist/index.html')
+gulp.task('copy_css_js', function() {
+    return gulp.src('lib/**/*', { cwd: 'src' })
+        .pipe(gulp.dest('./pre-build/lib/'));
+});
+
+// Make sure to have the return's
+// The difference is, that you need to return the actual task and gulp knows on its own when it's done. To specify the running order of the tasks, you need to add the dependent tasks, which should be finished first, as the second parameter to a task. In my case it's pretty obvious, that the directory needs to be cleaned first, before the concat task may run.
+
+
+gulp.task('inlinesource', ['pugify', 'copy_css_js'], function() {
+    return gulp.src('./pre-build/index.html')
         .pipe(inlinesource())
         .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('default', function() {
     gulp.watch('src/**/*', [
-        'imagemin', 'pugify', 'css_minify', 'js_minify', 'inlinesource'
+        'imagemin', 'css_minify', 'js_minify', 'pugify', 'copy_css_js', 'inlinesource'
     ]);
 });
