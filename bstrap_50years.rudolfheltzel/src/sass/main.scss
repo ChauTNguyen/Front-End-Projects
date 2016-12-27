@@ -52,7 +52,7 @@ body {
     width: 100%;
     transition: $transition-duration;
     opacity: 1;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 .md-navbar-remove-height {
@@ -388,13 +388,6 @@ body {
     height: 70px;
 }
 
-@media only screen and (min-width: 768px) {
-    .md-navbar-container {
-        max-width: 72.5%;
-        margin: 0 auto;
-    }
-}
-
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     .show-compact-nav .md-navbar {
         display: none;
@@ -409,9 +402,28 @@ body {
     .compact-nav-link {
         font-size: 1.5em;
     }
+    .compact-nav-top-block,
+    .compact-nav-bottom-block {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .md-navbar-container {
+        max-width: 72.5%;
+        margin: 0 auto;
+    }
+    .md-navbar {
+        padding-top: 100px;
+    }
+    .md-navbar-remove-height {
+        // Necessary duplicate...
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .hide-nav .md-navbar {
+        transform: translate(0, -200px);
+    }
     .landing-title {
         font-size: 4em;
     }
