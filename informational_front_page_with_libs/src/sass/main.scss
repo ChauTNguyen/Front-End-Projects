@@ -104,13 +104,16 @@
 .main-nav-permalink {
     padding: .5em;
     color: white;
+    &:hover {
+        background-color: $cl-primary;
+    }
     &:visited {
         color: white;
     }
-}
-
-.main-nav-permalink:hover {
-    background-color: $cl-primary;
+    &:active {
+        background-color: $cl-dark-primary;
+        color: white;
+    }
 }
 
 .current-content-heading,
