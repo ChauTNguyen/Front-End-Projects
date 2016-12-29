@@ -1,0 +1,46 @@
+#about,
+#menu .container,
+#gallery .container,
+#contact,
+#info {
+    padding: 100px 0;
+}
+
+.footer {
+    padding: 50px 0;
+}
+
+#landing {
+    background-image: url('images/intro-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 768px;
+}
+
+.menu-bg-container {
+    background: url('images/menu-bg.jpg') center/cover no-repeat fixed;
+}
+
+.gallery-bg-container {
+    background: url('images/gallery-bg.jpg') center/cover no-repeat fixed;
+}
+
+#chefs {
+    background: url('images/team-bg.jpg') center/cover no-repeat;
+}
+
+#info {
+    background-color: #313131;
+}
+
+.footer {
+    background-color: $touche-green;
+    color: white;
+    text-align: center;
+}
+
+.menu-overlay,
+.gallery-overlay {
+    height: 300px;
+}

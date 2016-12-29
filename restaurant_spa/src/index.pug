@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        meta(name='description', content='')
+        meta(name='author', content='Chau Nguyen')
+
+        title Touché
+
+        link(inline rel='stylesheet' type='text/css' href='lib/bootstrap.min.css')
+        link(inline rel='stylesheet' type='text/css' href='lib/google-fonts.css')
+        link(rel='stylesheet' type='text/css' href="lib/fancybox/source/jquery.fancybox.css")
+        link(inline rel='stylesheet' type='text/css', href='css/main.css')
+    body
+        #site-wrap
+            nav(class='md-navbar navbar navbar-fixed-top navbar-dark bg-inverse')
+                .md-navbar-container
+                    .md-navbar-float-wrapper
+                        h2(class='touche')
+                            a(class='top' href='#') Touché
+                        button(class='navbar-toggler hidden-md-up md-navbar-toggle-button', type='button', data-toggle='collapse', data-target='#navbarResponsive', style='float: right;', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    
+                    .collapse.navbar-toggleable-sm#navbarResponsive
+                        ul(class='long-nav nav navbar-nav float-md-right')
+                            li(class='nav-item long-nav-item')
+                                a(class='nav-link long-nav-link' href='#about') ABOUT
+                            li(class='nav-item long-nav-item')
+                                a(class='nav-link long-nav-link' href='#menu') MENU
+                            li(class='nav-item long-nav-item')
+                                a(class='nav-link long-nav-link' href='#gallery') GALLERY
+                            li(class='nav-item long-nav-item')
+                                a(class='nav-link long-nav-link' href='#chefs') CHEFS
+                            li(class='nav-item long-nav-item')
+                                a(class='nav-link long-nav-link' href='#reservations') CONTACT
+                        
+            #wrapper
+                main
+                    section(id='landing')
+                        .container
+                            .row
+                                .col-xs-12(class='center')
+                                    h1(class='touche') Touché
+                                    h2(class='landing-desc') <br>Restaurant / Coffee / Pub
+                            //- img(class='date-circle' src='images/date-circle.svg')
+                    section(id='about')
+                        .container
+                            .row
+                                .col-xs-12.col-md-6
+                                    .about-img-container
+                                        img(src='images/about.jpg' class='img-fluid' class='about-img')
+                                .col-xs-12.col-md-6.about-text
+                                    h3() OUR RESTAURANT
+                                    hr
+                                    p(class='about-paragraph') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+                                    h4(class='awarded-chefs') Awarded Chefs
+                                    p(class='about-paragraph') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.
+                    section(id='menu')
+                        .menu-bg-container
+                            .menu-overlay
+                                h1(class='section-title') MENU
+                                hr(class='hr-center')
+                                p(class='section-desc') Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.
+                        .container
+                            .row
+                                .menu-container
+                                    .col-xs-12.col-md-6
+                                        h3(class='menu-title') BREAKFAST & STARTERS
+                                        hr(class='hr-center')
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                    .col-xs-12.col-md-6
+                                        h3(class='menu-title') MAIN COURSE
+                                        hr(class='hr-center')
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                    .col-xs-12.col-md-6
+                                        h3(class='menu-title') DINNER
+                                        hr(class='hr-center')
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                    .col-xs-12.col-md-6
+                                        h3(class='menu-title') COFFEE & DRINKS
+                                        hr(class='hr-center')
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                        .menu-item
+                                            .menu-short
+                                                .menu-item-title Delicious Dish
+                                                .menu-item-cost $35
+                                            .menu-item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.
+                                
+                    section(id='gallery')
+                        .gallery-bg-container
+                            .gallery-overlay
+                                h1(class='section-title') GALLERY
+                                hr(class='hr-center')
+                                p(class='section-desc') Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.
+                        .container
+                            ul(class='meal-categories')
+                                li(class='meal-category-item')
+                                    a(href='#' data-filter='*' class='active-category meal-category-permalink') ALL
+                                li(class='meal-category-item')
+                                    a(href='#' data-filter='.breakfast' class='meal-category-permalink') BREAKFAST
+                                li(class='meal-category-item')
+                                    a(href='#' data-filter='.lunch' class='meal-category-permalink') LUNCH
+                                li(class='meal-category-item')
+                                    a(href='#' data-filter='.dinner' class='meal-category-permalink') DINNER
+                            .row
+                                .gallery-container
+                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/01-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/01-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.dinner.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/02-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/02-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/03-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/03-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/04-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/04-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.lunch.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/05-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/05-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/06-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/06-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.lunch.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/07-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/07-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/08-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/08-small.jpg' class='img-fluid gallery-img')
+                                    .col-xs-12.col-md-4.dinner.isotope-item
+                                        .gallery-item
+                                            a(class='fancybox' rel='group' href='images/09-large.jpg')
+                                                .gallery-item-overlay
+                                                    h5 DISH NAME
+                                                img(src='images/09-small.jpg' class='img-fluid gallery-img')
+                    
+                    section(id='chefs')
+                        .chefs-overlay
+                        .container
+                            .row
+                                .col-xs-12
+                                    h1(class='section-title') MEET OUR CHEFS
+                                    hr
+                                    p(class='section-desc') Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.
+                                .col-xs-12.col-md-4
+                                    .chef-container
+                                        img(src='images/chef-01.jpg' class='img-fluid chef-img')
+                                        h4(class='chef-name') Mike Doe
+                                        p(class='chef-paragraph') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
+                                .col-xs-12.col-md-4
+                                    .chef-container
+                                        img(src='images/chef-02.jpg' class='img-fluid chef-img')
+                                        h4(class='chef-name') Chris Pratt
+                                        p(class='chef-paragraph') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
+                                .col-xs-12.col-md-4
+                                    .chef-container
+                                        img(src='images/chef-03.jpg' class='img-fluid chef-img')
+                                        h4(class='chef-name') Ethan McLady
+                                        p(class='chef-paragraph') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
+                    section(id='reservations')
+                        h3(class='center') WANT TO MAKE A RESERVATION? CALL <strong>1-887-654-3210</strong>
+                    section(id='contact')
+                        .container
+                            .row
+                                .col-xs-12.col-md-8.offset-md-2
+                                    .center
+                                        h2(class='center') CONTACT FORM
+                                        hr(class='hr-center')
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed.
+                                    form
+                                        .form-group.col-xs-12.col-md-6
+                                            input(type='text' class='form-control' id='name' aria-describedby='nameHelp' placeholder='Name')
+                                        .form-group.col-xs-12.col-md-6
+                                            input(type='text' class='form-control' id='email' aria-describedby='emailHelp' placeholder='Email')
+                                        .form-group.col-xs-12
+                                            textarea(class='form-control' id='message' aria-describedby='messageHelp' placeholder='Message')
+                                        .center
+                                            button(class='btn btn-primary btn-lg contact-submit' type='submit') SEND MESSAGE
+                    section(id='info')
+                        .container.center
+                            .row
+                                .col-xs-12.col-md-4
+                                    span(class='info-title') ADDRESS
+                                    p(class='info-paragraph').
+                                        4321 California St,<br>San Francisco, CA 12345
+                                .col-xs-12.col-md-4
+                                    span(class='info-title') OPENING HOURS
+                                    p(class='info-paragraph').
+                                        Mon-Thurs: 10:00 AM - 11:00 PM<br>Fri-Sun: 11:00 AM - 02:00 AM
+                                .col-xs-12.col-md-4
+                                    span(class='info-title') CONTACT INFO
+                                    p(class='info-paragraph').
+                                        Phone: +1 123 456 1234
+                                        Email: info@company.com
+                    footer(class='footer')
+                        .container
+                            .row
+                                .footer-info.col-xs-12
+                                    span @copy Touché. All rights reserved. Designed by TemplateWire.
+                        
+
+        script(inline type='text/javascript' src='lib/jquery.min.js')
+        script(inline type='text/javascript' src='lib/tether.min.js')
+        script(inline type='text/javascript' src='lib/bootstrap.min.js')
+        script(type='text/javascript' src='lib/fancybox/source/jquery.fancybox.pack.js')
+        script(inline type='text/javascript' src='lib/isotope.pkgd.min.js')
+        script(inline type='text/javascript' src='js/index.js')

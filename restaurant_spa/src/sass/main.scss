@@ -1,0 +1,334 @@
+@import 'variables';
+@import 'scaffolding';
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: none; // Necessary for fade-in to work
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.touche {
+    font-family: 'Dancing Script', cursive;
+}
+
+.long-nav-link {
+    color: white !important;
+    transition: 0.25s;
+    &:hover {
+        color: $touche-green !important;
+    }
+    &:visited {
+        color: white !important;
+    }
+}
+
+.md-navbar-float-wrapper {
+    overflow: hidden;
+}
+
+.md-navbar-container .touche {
+    float: left;
+}
+
+.md-navbar-toggle-button {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 0;
+}
+
+.md-navbar-toggle-button:hover {
+    background-color: $touche-green;
+    color: white !important;
+}
+
+.md-navbar-toggle-button:focus,
+.md-navbar-toggle-button:active {
+    outline: none !important;
+    // border-color: inherit;
+    // box-shadow: none;
+}
+
+#landing {
+    color: white;
+}
+
+#landing .touche {
+    font-size: 7rem;
+}
+
+.top {
+    color: $touche-green !important;
+    text-decoration: none !important;
+    &:hover {
+        color: $touche-green;
+        text-decoration: none;
+    }
+    &:visited {
+        color: $touche-green;
+    }
+}
+
+#site-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.md-navbar {
+    width: 100%;
+    transition: $transition-duration;
+    padding-top: 35px;
+    color: white;
+    background-color: transparent !important;
+}
+
+.md-navbar-remove-height {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.md-navbar-bg-color {
+    background-color: #212121 !important;
+}
+
+.long-nav-item {
+    padding: 0 0.5em;
+}
+
+.active-nav {
+    color: $touche-green !important;
+}
+
+#landing {
+    padding-top: 200px;
+}
+
+.center {
+    text-align: center;
+}
+
+.about-text hr {
+    background-color: $touche-green !important;
+    width: 70px;
+    height: 2px;
+    margin: 25px 0 50px 0;
+}
+
+.hr-center {
+    background-color: $touche-green !important;
+    width: 70px;
+    height: 2px;
+}
+
+.about-img {
+    padding-bottom: 50px;
+}
+
+.about-paragraph {
+    color: grey;
+}
+
+.chef-paragraph {
+    color: #d3d3d3;
+}
+
+.awarded-chefs {
+    padding-top: 25px;
+}
+
+.menu-overlay,
+.gallery-overlay,
+#chefs {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.landing-overlay,
+.menu-overlay,
+.gallery-overlay,
+.chefs-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-title,
+.section-desc,
+.chef-name {
+    color: white;
+}
+
+.menu-title {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.menu-item {
+    padding: 25px;
+}
+
+.menu-short {
+    overflow: auto; // expand to children's sizes
+}
+
+.menu-short {
+    border-bottom: 2px dotted grey;
+}
+
+.menu-item-title {
+    float: left;
+}
+
+.menu-item-cost {
+    float: right;
+    font-weight: bold;
+}
+
+.gallery-container {
+    padding-top: 15px;
+}
+
+.meal-categories {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.meal-category-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.meal-category-permalink {
+    background-color: #dfdfdf;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 1em;
+    &:active {
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $touche-green;
+        text-decoration: none;
+    }
+    &:visited {
+        color: black;
+    }
+}
+
+.active-category {
+    background-color: $touche-green;
+    color: white;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 15px 0;
+}
+
+.gallery-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30% 0 0 0;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+#landing,
+#chefs {
+    position: relative;
+}
+
+.landing-overlay,
+.chefs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .paragraph {
+    padding-top: 1em;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+}
+
+.chef-img {
+    padding: 25px 0;
+}
+
+#reservations {
+    background-color: rgb(142, 182, 64);
+    color: white;
+    font-family: 'Open Sans', serifs;
+    width: 100%;
+    padding: 100px 25px;
+}
+
+#name,
+#email,
+#message {
+    border-radius: 0;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    outline: none;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+#message {
+    height: 150px;
+}
+
+.contact-submit {
+    background-color: $touche-green;
+    border: 0;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.contact-submit:hover {
+    background-color: rgb(100, 160, 40);
+}
+
+.info-title {
+    color: $touche-green;
+}
+
+.info-paragraph {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .md-navbar-float-wrapper {
+        overflow: visible;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .md-navbar-container {
+        max-width: 72.5%;
+        margin: 0 auto;
+    }
+}
