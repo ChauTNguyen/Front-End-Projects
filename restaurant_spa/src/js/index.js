@@ -1,12 +1,5 @@
 $(document).ready(function() {
-    // $(window).on('beforeunload', function() {
-    //     // Hiding my menu bug on refresh.
-    //     $(window).scrollTop(0);
-    //     $('body').hide();
-    // });
-
     $('body').fadeIn(1000);
-
     $(".fancybox").fancybox();
 
     $('.top').click(function() {
@@ -37,10 +30,12 @@ $(document).ready(function() {
     var posOfChef = $('#chefs').position().top;
     var posOfReservations = $('#reservations').position().top;
     var navLinks = $('.md-navbar .nav-link').toArray();
+    var toucheHeader = $('#touche-header').offset().top;
 
+    console.log(toucheHeader);
     $(window).scroll(function() {
         var currentScrollPos = $(this).scrollTop();
-        var navHeight = $('.md-navbar').outerHeight(true);
+        var navHeight = 251.97;
         var bottomOfNav = currentScrollPos + navHeight;
         var activeNav = $('.md-navbar .active-nav');
 
@@ -59,7 +54,8 @@ $(document).ready(function() {
             }
         }
 
-        if (currentScrollPos >= (posOfAbout - 295)) {
+        if (bottomOfNav >= toucheHeader + 50) {
+            console.log('touching');
             $('.md-navbar').addClass('md-navbar-bg-color');
             $('.md-navbar').addClass('md-navbar-remove-height');
         } else {

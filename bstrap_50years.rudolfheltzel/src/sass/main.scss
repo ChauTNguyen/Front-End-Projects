@@ -388,6 +388,10 @@ body {
     height: 70px;
 }
 
+.credits {
+    padding: 100px 0;
+}
+
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     .show-compact-nav .md-navbar {
         display: none;

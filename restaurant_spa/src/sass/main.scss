@@ -15,6 +15,13 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+#landing .container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
 .long-nav-link {
     color: white !important;
     transition: 0.25s;
@@ -42,7 +49,7 @@ body {
 
 .md-navbar-toggle-button:hover {
     background-color: $touche-green;
-    color: white !important;
+    border-color: white !important;
 }
 
 .md-navbar-toggle-button:focus,
@@ -57,7 +64,11 @@ body {
 }
 
 #landing .touche {
-    font-size: 7rem;
+    font-size: 6rem;
+}
+
+.landing-desc {
+    text-align: center;
 }
 
 .top {
@@ -101,10 +112,6 @@ body {
 
 .active-nav {
     color: $touche-green !important;
-}
-
-#landing {
-    padding-top: 200px;
 }
 
 .center {
@@ -188,6 +195,7 @@ body {
 
 .gallery-container {
     padding-top: 15px;
+    // padding: 15px 5px 0 5px;
 }
 
 .meal-categories {
@@ -198,7 +206,7 @@ body {
 
 .meal-category-item {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .meal-category-permalink {
@@ -225,9 +233,13 @@ body {
     color: white;
 }
 
+.isotope-item {
+    // removes col padding
+    padding: 5px;
+}
+
 .gallery-item {
     position: relative;
-    margin: 15px 0;
 }
 
 .gallery-item-overlay {
@@ -269,6 +281,10 @@ body {
 .gallery-img {
     width: 100%;
     height: auto;
+}
+
+.fancybox-nav span {
+    visibility: visible;
 }
 
 .chef-img {
@@ -330,5 +346,8 @@ body {
     .md-navbar-container {
         max-width: 72.5%;
         margin: 0 auto;
+    }
+    .fancybox-nav span {
+        visibility: hidden;
     }
 }

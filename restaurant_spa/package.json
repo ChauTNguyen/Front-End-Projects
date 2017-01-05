@@ -1,7 +1,7 @@
 {
-    "name": "Bootstrap-sample-1",
+    "name": "Touche-remake",
     "version": "1.0.0",
-    "description": "Bootstrap-sample-1. fixed nav bar (collapsible), sign-up modal, sliding carousel, footer, proper grid usage.",
+    "description": "My remake of http://www.templatewire.com/preview/touche/. Uses Bootstrap and jQuery... Includes Isotope (for filtering images) and fancyBox (for lightboxes).",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "deploy": "cd dist; surge ./; cd ..;"

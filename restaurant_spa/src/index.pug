@@ -42,7 +42,7 @@ html(lang="en")
                         .container
                             .row
                                 .col-xs-12(class='center')
-                                    h1(class='touche') Touché
+                                    h1(id='touche-header' class='touche') Touché
                                     h2(class='landing-desc') <br>Restaurant / Coffee / Pub
                             //- img(class='date-circle' src='images/date-circle.svg')
                     section(id='about')
@@ -50,7 +50,7 @@ html(lang="en")
                             .row
                                 .col-xs-12.col-md-6
                                     .about-img-container
-                                        img(src='images/about.jpg' class='img-fluid' class='about-img')
+                                        img(src='images/about.jpg' class='img-fluid about-img')
                                 .col-xs-12.col-md-6.about-text
                                     h3() OUR RESTAURANT
                                     hr
@@ -177,55 +177,55 @@ html(lang="en")
                                     a(href='#' data-filter='.dinner' class='meal-category-permalink') DINNER
                             .row
                                 .gallery-container
-                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                    .col-xs-6.col-md-4.breakfast.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/01-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/01-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.dinner.isotope-item
+                                    .col-xs-6.col-md-4.dinner.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/02-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/02-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                    .col-xs-6.col-md-4.breakfast.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/03-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/03-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                    .col-xs-6.col-md-4.breakfast.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/04-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/04-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.lunch.isotope-item
+                                    .col-xs-6.col-md-4.lunch.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/05-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/05-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                    .col-xs-6.col-md-4.breakfast.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/06-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/06-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.lunch.isotope-item
+                                    .col-xs-6.col-md-4.lunch.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/07-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/07-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.breakfast.isotope-item
+                                    .col-xs-6.col-md-4.breakfast.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/08-large.jpg')
                                                 .gallery-item-overlay
                                                     h5 DISH NAME
                                                 img(src='images/08-small.jpg' class='img-fluid gallery-img')
-                                    .col-xs-12.col-md-4.dinner.isotope-item
+                                    .col-xs-6.col-md-4.dinner.isotope-item
                                         .gallery-item
                                             a(class='fancybox' rel='group' href='images/09-large.jpg')
                                                 .gallery-item-overlay
@@ -300,6 +300,6 @@ html(lang="en")
         script(inline type='text/javascript' src='lib/jquery.min.js')
         script(inline type='text/javascript' src='lib/tether.min.js')
         script(inline type='text/javascript' src='lib/bootstrap.min.js')
-        script(type='text/javascript' src='lib/fancybox/source/jquery.fancybox.pack.js')
+        script(defer type='text/javascript' src='lib/fancybox/source/jquery.fancybox.pack.js')
         script(inline type='text/javascript' src='lib/isotope.pkgd.min.js')
         script(inline type='text/javascript' src='js/index.js')
